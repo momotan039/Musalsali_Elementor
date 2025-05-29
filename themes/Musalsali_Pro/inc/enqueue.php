@@ -2,7 +2,7 @@
 //add css files
 function css_enqueue_styles() {
     // Get the theme directory URL
-    $theme_uri = get_template_directory_uri();
+    $theme_uri = get_stylesheet_directory_uri();
 
     // Enqueue Styles
     wp_enqueue_style('main', $theme_uri . '/assets/css/main.css');
@@ -16,7 +16,7 @@ add_action('wp_enqueue_scripts', 'css_enqueue_styles');
 
 //add js files
 function js_enqueue_scripts() {
-    $theme_uri = get_template_directory_uri();
+    $theme_uri = get_stylesheet_directory_uri();
     // Enqueue Scripts
     wp_enqueue_script('main', $theme_uri . '/assets/js/main.js', array(), null, true);
 }

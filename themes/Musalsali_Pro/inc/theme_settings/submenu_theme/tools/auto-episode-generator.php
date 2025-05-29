@@ -1,5 +1,5 @@
 <?php
-require_once get_template_directory() . '/inc/theme_settings/submenu_theme/tools/scrap-vedios-urls.php';
+require_once get_stylesheet_directory() . '/inc/theme_settings/submenu_theme/tools/scrap-vedios-urls.php';
 
 add_action('admin_menu', function () {
     add_submenu_page(

@@ -16,7 +16,7 @@ add_action('template_redirect', function () {
 
 // register arabic translated language for dashboard
 function my_theme_load_textdomain() {
-    load_theme_textdomain('arabic-lang', get_template_directory() . '/languages');
+    load_theme_textdomain('arabic-lang', get_stylesheet_directory() . '/languages');
 }
 add_action('after_setup_theme', 'my_theme_load_textdomain');
 
@@ -42,8 +42,8 @@ add_filter('admin_footer_text', 'custom_admin_footer_text');
 
 
 // Include settings page & fields
-require_once get_template_directory() . '/inc/theme_settings/theme-shared-fields.php';
-require_once get_template_directory() . '/inc/theme_settings/theme-settings-menu.php';
-require_once get_template_directory() . '/inc/theme_settings/theme-settings-fields.php';
+require_once get_stylesheet_directory() . '/inc/theme_settings/theme-shared-fields.php';
+require_once get_stylesheet_directory() . '/inc/theme_settings/theme-settings-menu.php';
+require_once get_stylesheet_directory() . '/inc/theme_settings/theme-settings-fields.php';
 // Include Submenu Settings
 require_once 'submenu_theme/submenu_theme.php';

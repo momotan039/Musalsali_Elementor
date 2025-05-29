@@ -1,6 +1,6 @@
 <?php
-require_once get_template_directory() . '/inc/scraping/elcinema.php';
-require_once get_template_directory() . '/inc/scraping/tmdb.php';
+require_once get_stylesheet_directory() . '/inc/scraping/elcinema.php';
+require_once get_stylesheet_directory() . '/inc/scraping/tmdb.php';
 
 function add_actor_rating_to_post($post_id, $show_info)
 {

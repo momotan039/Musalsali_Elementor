@@ -63,8 +63,8 @@ function custom_reset_theme_settings()
     update_option('primary_color', '#a20d0d');
     update_option('light_color', '#ffffff');
     update_option('dark_color', '#000000');
-    update_option('wallpaper',get_template_directory_uri().'/assets/images/cover.jpg');
-    update_option('icon',get_template_directory_uri().'/assets/images/logo.png');
+    update_option('wallpaper',get_stylesheet_directory_uri().'/assets/images/cover.jpg');
+    update_option('icon',get_stylesheet_directory_uri().'/assets/images/logo.png');
     echo '<script>location.reload();</script>';
     // exit;
 }
@@ -84,11 +84,11 @@ function initialize_theme_options_on_activation() {
     }
 
     if (get_option('wallpaper') === false) {
-        update_option('wallpaper', get_template_directory_uri() . '/assets/images/cover.jpg');
+        update_option('wallpaper', get_stylesheet_directory_uri() . '/assets/images/cover.jpg');
     }
 
     if (get_option('icon') === false) {
-        update_option('icon', get_template_directory_uri() . '/assets/images/logo.png');
+        update_option('icon', get_stylesheet_directory_uri() . '/assets/images/logo.png');
     }
 }
 add_action('after_switch_theme', 'initialize_theme_options_on_activation');

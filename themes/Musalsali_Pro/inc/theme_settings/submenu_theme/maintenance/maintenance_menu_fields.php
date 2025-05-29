@@ -57,7 +57,7 @@ function description_maintenance_callback(){
 function initialize_maintenance_options_on_activation() {
     // Initialize options only if they don't already exist
     if (get_option('image_maintenance') === false) {
-        update_option('image_maintenance', get_template_directory_uri() . '/assets/images/comming.png');
+        update_option('image_maintenance', get_stylesheet_directory_uri() . '/assets/images/comming.png');
     }
 }
 add_action('after_switch_theme', 'initialize_maintenance_options_on_activation');

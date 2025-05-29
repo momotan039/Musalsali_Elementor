@@ -61,6 +61,6 @@ function custom_theme_settings_page()
 function custom_theme_settings_scripts()
 {
     wp_enqueue_media(); // Load WP Media Uploader
-    wp_enqueue_script('theme-settings-js', get_template_directory_uri() . '/inc/theme_settings/theme-settings.js', array('jquery'), null, true);
+    wp_enqueue_script('theme-settings-js', get_stylesheet_directory_uri() . '/inc/theme_settings/theme-settings.js', array('jquery'), null, true);
 }
 add_action('admin_enqueue_scripts', 'custom_theme_settings_scripts');
