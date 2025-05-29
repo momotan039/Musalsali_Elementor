@@ -1,0 +1,10 @@
+# ignore all files
+/*
+
+#keep the following directories and files
+!README.md
+!/.gitignore
+# keep from themes just musalsali pro
+!/themes/
+/themes/hello-elementor
+!/themes/Musalsali_Pro/

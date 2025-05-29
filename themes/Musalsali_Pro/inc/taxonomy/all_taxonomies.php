@@ -1,0 +1,9 @@
+<?php 
+require_once('genre_tax.php');
+require_once('actors_tax.php');
+require_once('season_seriess_tax.php');
+require_once('movie_seriess_tax.php');
+require_once('years_tax.php');
+require_once('directors_tax.php');
+require_once('writers_tax.php');
+?>
